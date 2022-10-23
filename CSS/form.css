@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formContainer{
+    display: flex;
+    margin-top: 130px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 5px rgba(117, 117, 117, 0.5), 
+                -10px 10px 5px rgba(148, 142, 142, 0.5), 
+                15px -10px 5px rgba(199, 197, 197, 0.5);
+}
+#hd{
+    display: none;
+}
+#firstname,#surname{
+    padding: 10px;
+    width: 12vw;
+    border-radius: 3px;
+    border: 1px solid #808080;
+}
+#surname{
+    margin-left: 0.5vw;
+}
+#mail{
+    padding: 10px;
+    width: 24.8vw;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#tel{
+    padding: 10px;
+    width: 24.8vw;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#day,#month,#year{
+    padding: 10px;
+    width: 8vw;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+}
+#fm,#ml,#ot{
+    display: inline-block;
+    border: 1px solid #808080;
+    padding: 10px;
+    width: 8vw;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#rd1,#rd2,#rd3{
+    margin-left: 30px;
+}
+#sgn{
+    padding: 10px 4rem;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-left: 4rem; 
+    margin-top: 1rem;
+    cursor: pointer;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+@media screen  and (max-width: 800px) {
+    .formContainer{
+        width: 70vw;
+        padding: 2rem;
+        margin-bottom: 13rem;
+        margin-top: 10rem;
+    }
+    #firstname,#surname{
+        width: 25vw;
+    }
+    #mail{
+        width: 52vw;
+    }
+    #tel{
+        width: 52vw;
+    }
+    #day,#month,#year{
+        width: 16vw;
+    }
+    #fm,#ml,#ot{
+        width: 16vw;
+        font-size: 12px;
+    }
+    #rd1,#rd2,#rd3{
+        margin-left: 13px;
+    }/*
+    #sgn{
+        font-size: 15px;
+        padding: 10px 40px;
+    }*/
+}
+@media screen  and (max-width:555px) {
+    .formContainer{
+        width: 90vw;
+        padding-inline: 10px;
+    }
+    #firstname,#surname{
+        width: 35vw;
+    }
+    #mail,#tel{
+        width: 72vw;
+    }
+    #day,#month,#year{
+        width: 23vw;
+    }
+    #fm,#ml,#ot{
+        width: 23vw;
+    }
+    #sgn{
+        padding: 10px 3rem;
+    }
+}
+@media screen and (max-width:444px) {
+    .formContainer{
+        margin-bottom: 20rem;
+    }
+    #sgn{
+        padding: 10px 1.5rem;
+    }
+}
+@media screen and (max-width:365px) {
+    
+    #rd1,#rd2,#rd3{
+        margin-left: 15px;
+    }
+    #sgn{
+        margin-left: 2rem;
+        padding: 10px 1.6rem;
+    }
+}
