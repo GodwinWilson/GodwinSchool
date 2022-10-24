@@ -16,7 +16,7 @@ function validate() {
     if(Number(document.myForm.YearofBirth.value) % 4 == 0 && (document.myForm.MonthofBirth.value == "02" && document.myForm.DayofBirth.value == "29")){
         return true;
     }
-    if(document.myForm.MonthofBirth.value == "02" && document.myForm.DayofBirth.value >= "28"){
+    if(document.myForm.MonthofBirth.value == "02" && document.myForm.DayofBirth.value > "28"){
         alert('Please provide a valid Date of Birth')
         return false;
     }
